@@ -1,0 +1,36 @@
+# Original variables with different data types
+text = "Hello"      # String
+number = 42         # Integer
+decimal = 3.14      # Float
+flag = True         # Boolean
+complex_num = 2+3j  # Complex number
+
+# Print original values and types
+print("Original values:")
+print(f"text: {text} ({type(text)})")
+print(f"number: {number} ({type(number)})")
+print(f"decimal: {decimal} ({type(decimal)})")
+print(f"flag: {flag} ({type(flag)})")
+print(f"complex_num: {complex_num} ({type(complex_num)})\n")
+
+# Convert to different types
+print("Converted values:")
+# String -> Integer (only works for number strings)
+converted_int = int("123")  # Using different value for valid conversion
+print(f"'123' converted to integer: {converted_int} ({type(converted_int)})")
+
+# Integer -> String
+converted_str = str(number)
+print(f"{number} converted to string: '{converted_str}' ({type(converted_str)})")
+
+# Float -> Integer (removes decimal part)
+converted_float_to_int = int(decimal)
+print(f"{decimal} converted to integer: {converted_float_to_int} ({type(converted_float_to_int)})")
+
+# Boolean -> Integer (True=1, False=0)
+converted_bool_to_int = int(flag)
+print(f"{flag} converted to integer: {converted_bool_to_int} ({type(converted_bool_to_int)})")
+
+# Complex -> String
+converted_complex_to_str = str(complex_num)
+print(f"{complex_num} converted to string: '{converted_complex_to_str}' ({type(converted_complex_to_str)})")

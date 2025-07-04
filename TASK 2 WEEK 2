@@ -1,0 +1,31 @@
+name1 = "Taha Hassan"
+profession1 = "editor"
+country1 = "pakistan"
+is_employed1 = True
+
+# User Profile 2
+name2 = "hammad"
+profession2 = "Graphic Designer"
+country2 = "Spain"
+is_employed2 = False
+
+# User Profile 3
+name3 = "ali"
+profession3 = "Data Scientist"
+country3 = "China"
+is_employed3 = True
+
+# Convert employment status to readable strings
+employed1 = "Employed" if is_employed1 else "Unemployed"
+employed2 = "Unemployed" if not is_employed2 else "Employed"
+employed3 = "Employed" if is_employed3 else "Unemployed"
+
+# Print table header
+print("\nUser Profiles:")
+print(f"{'Name':<15} {'Profession':<20} {'Country':<10} {'Employment Status'}")
+print("-" * 55)
+
+# Print each user's data in table format
+print(f"{name1:<15} {profession1:<20} {country1:<10} {employed1}")
+print(f"{name2:<15} {profession2:<20} {country2:<10} {employed2}")
+print(f"{name3:<15} {profession3:<20} {country3:<10} {employed3}")

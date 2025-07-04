@@ -1,0 +1,19 @@
+# Get user input
+user_input = input("Enter any value: ")
+
+# Try to detect data type
+try:
+    # Try converting to integer
+    value = int(user_input)
+    print(f"You entered an integer: {value}")
+except ValueError:
+    try:
+        # Try converting to float
+        value = float(user_input)
+        print(f"You entered a float: {value}")
+    except ValueError:
+        # If both conversions fail, it's a string
+        print(f"You entered a string: '{user_input}'")
+
+# Show Python's actual type detection
+print(f"Python detected type: {type(value).__name__}")

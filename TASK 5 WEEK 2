@@ -1,0 +1,25 @@
+print("=== Welcome to the User Preferences Survey ===")
+print("Please answer the following 5 questions:\n")
+
+# Collect user responses
+name = input("1. What is your full name? ")
+fav_food = input("2. What's your favorite food? ")
+birth_year = input("3. What year were you born? ")
+fav_number = input("4. What's your favorite number? ")
+fav_language = input("5. What's your favorite programming language? ")
+
+# Calculate age (assuming current year is 2025)
+current_year = 2025
+age = current_year - int(birth_year) if birth_year.isdigit() else "N/A"
+
+# Print professional summary
+print("\n" + "="*50)
+print("SURVEY SUMMARY".center(50))
+print("="*50)
+print(f" Name: {name.title()}")
+print(f" Favorite Food: {fav_food.capitalize()}")
+print(f" Birth Year: {birth_year} (Age: {age})")
+print(f" Favorite Number: {fav_number}")
+print(f" Favorite Programming Language: {fav_language.upper()}")
+print("="*50)
+print("Thank you for completing our survey!".center(50))

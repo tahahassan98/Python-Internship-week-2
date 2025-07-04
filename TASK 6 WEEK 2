@@ -1,0 +1,16 @@
+current_year = 2025
+
+# Get user input
+birth_year = int(input("Please enter your year of birth: "))
+
+# Calculate age
+age = current_year - birth_year
+
+# Check eligibility and display result
+print(f"\nYou are currently {age} years old.")
+if age >= 18:
+    print(" You are eligible to vote!")
+else:
+    years_needed = 18 - age
+    print(f" You are not eligible to vote yet.")
+    print(f" You'll be eligible in {years_needed} year{'s' if years_needed > 1 else ''}.")
